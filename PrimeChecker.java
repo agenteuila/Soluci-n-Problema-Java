@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
-/**
- * Prime Number Checker Application
+/*
+ * Prime Number Checker 
  * 
  * Student: Camilo Andrés Vega Díaz
  * University: Politécnico Grancolombiano
@@ -9,10 +9,11 @@ import java.util.Scanner;
  * This program checks if a given positive integer is a prime number.
  * A prime number is a natural number greater than 1 that has no positive 
  * divisors other than 1 and itself.
+
  */
 public class PrimeChecker {
     
-    /**
+    /*
      * Main method - Entry point of the application
      */
     public static void main(String[] args) {
@@ -43,7 +44,7 @@ public class PrimeChecker {
         }
     }
     
-    /**
+    /*
      * Displays student information at the beginning of the program
      */
     private static void displayStudentInfo() {
@@ -55,7 +56,7 @@ public class PrimeChecker {
         System.out.println("=".repeat(60));
     }
     
-    /**
+    /*
      * Gets a positive integer input from the user with validation
      * 
      * @param scanner Scanner object for reading user input
@@ -86,15 +87,13 @@ public class PrimeChecker {
         return number;
     }
     
-    /**
-     * Checks if a given number is prime using an efficient algorithm
-     * 
-     * Algorithm explanation:
+    /*
+     * - Checks if a given number is prime using an efficient algorithm
+     * - Algorithm explanation:
      * - Numbers less than 2 are not prime
      * - 2 is the only even prime number
      * - For odd numbers, check divisibility only up to sqrt(n)
      * - Only check odd divisors to optimize performance
-     * 
      * @param n The number to check for primality
      * @return true if the number is prime, false otherwise
      */
@@ -123,7 +122,7 @@ public class PrimeChecker {
         return true; // No divisors found, it's prime
     }
     
-    /**
+    /*
      * Displays the result of the prime check in a formatted way
      * 
      * @param number The number that was checked
@@ -152,7 +151,7 @@ public class PrimeChecker {
         System.out.println("=".repeat(50));
     }
     
-    /**
+    /*
      * Shows some factors of a non-prime number (educational purpose)
      * 
      * @param number The number to find factors for
